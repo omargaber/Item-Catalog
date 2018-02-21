@@ -1,0 +1,25 @@
+<html>
+
+    <head>
+        <link rel=stylesheet type=text/css href = '{{ url_for('static', filename= 'b.css')}}'>
+    </head>
+
+    <body>
+
+        <header class="header-bar">
+            <div class="bar-container">
+                <div class="top-title"><a href="{{url_for('categoryList')}}"><strong>CatalogApp</strong></a></div>
+                <div class="button-location"><a href="{{url_for('gdisconnect')}}">{%include "logout.html"%}</a></div>
+            </div>
+
+            
+        </header>
+
+        <div class="content-container">
+                <h1 class="cat-title">{{item_browsed.name}}</h1>
+        </br>
+        <p>{{item_browsed.description}}</p>
+    </br></br>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<html>
+
+    <head>
+        <link rel=stylesheet type=text/css href = '{{ url_for('static', filename= 'b.css')}}'>
+    </head>
+
+    <body>
+
+        <header class="header-bar">
+            <div class="bar-container">
+                <div class="top-title"><strong><a href="{{url_for('categoryList')}}">CatalogApp</a></strong></div>
+                <div class="button-location">{%include "logout.html"%}</div>
+            </div>
+
+            
+        </header>
+
+        <div class="content-container">
+                <form method="post">
+            </br>
+                <h1 class="cat-title">Delete Item</h1>
+            </br>
+                <h2>Are you sure you want to delete the item?</h2>
+            </br>
+            <button type="submit" class="btn btn-default" type="submit">Submit</button>
+
+                </form>
+
+        </div>
+
+    </body>
+</html>
